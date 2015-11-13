@@ -30,7 +30,7 @@ import json
 import os
 
 def get_mailcounter():
-    return os.popen("(find ${HOME}/.mail/*/*/new/ -type f -print; find ${HOME}/.mail/*/*/cur/ -type f -print) | sed \"/\(^.*S$\)/d\" | wc -l |xargs -i{} echo -n mail: {} ").read()
+    return os.popen("(find ${HOME}/.mail/*/*/new/ -type f -print;) | sed \"/\(^.*S$\)/d\" | wc -l |xargs -i{} echo -n mail: {} ").read()
 
 
 def print_line(message):
