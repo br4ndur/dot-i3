@@ -149,6 +149,9 @@ bindsym $mod+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 #invert colors
 bindsym $mod+i exec "xcalib -invert -alter"
 
+#print-screen
+bindsym Print exec scrot
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
