@@ -80,7 +80,7 @@ bindsym $mod+Shift+0 move container to workspace $WS0
 
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec xterm -e tmux a
 
 # kill focused window
 #bindsym $mod+Shift+slash kill
